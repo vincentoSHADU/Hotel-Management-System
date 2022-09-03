@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.effect.Glow;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -196,6 +197,23 @@ public class HelloController implements Initializable {
 
     }
 
+    @FXML
+    private ImageView imgpool;
+
+    @FXML
+    private ImageView imgrooms;
+
+    @FXML
+    private ImageView imgwifi;
+
+    @FXML
+    private Text txtpool;
+
+    @FXML
+    private Text txttrooms;
+
+    @FXML
+    private Text txtwifi;
 
     @FXML
     private Text loginTxtStatus;
@@ -325,12 +343,6 @@ public class HelloController implements Initializable {
             ScrollPane pane1 = FXMLLoader.load(HelloApplication.class.getResource("employee-view.fxml"));
             paneView.getChildren().setAll(pane1);
 
-            /*Stage stage = (Stage) paneView.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("employee-view.fxml"));
-            Scene scene = new Scene (fxmlLoader.load());
-            stage.setTitle("EMPLOYEE");
-            stage.setScene(scene);
-            stage.show(); */
 
         } else if (event.getSource() == btnCustomers) {
             txtHotelName.setText("CUSTOMERS");

@@ -19,14 +19,14 @@
             </Text>
             <ImageView fitHeight="363.0" fitWidth="345.0" layoutX="-18.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img6.jpg" />
+                  <Image url="@images/img6.jpg" />
                </image>
             </ImageView>
             <Pane layoutX="428.0" layoutY="111.0" prefHeight="111.0" prefWidth="113.0" style="-fx-background-color: orange; -fx-background-insets: 0; -fx-background-radius: 20; -fx-border-insets: 0;">
                <children>
                   <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="-13.0" layoutY="-15.0" pickOnBounds="true">
                      <image>
-                        <Image url="@img7.jpg" />
+                        <Image url="@images/img7.jpg" />
                      </image></ImageView>
                </children>
             </Pane>
@@ -37,7 +37,7 @@
                         <Blend />
                      </effect>
                      <image>
-                        <Image url="@img10.png" />
+                        <Image url="@images/img10.png" />
                      </image>
                   </ImageView>
                </children>
@@ -46,7 +46,7 @@
                <children>
                   <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="-13.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img14.png" />
+                        <Image url="@images/img14.png" />
                      </image></ImageView>
                </children>
             </Pane>
@@ -54,7 +54,7 @@
                <children>
                   <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="-12.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img13.png" />
+                        <Image url="@images/img13.png" />
                      </image></ImageView>
                </children>
             </Pane>

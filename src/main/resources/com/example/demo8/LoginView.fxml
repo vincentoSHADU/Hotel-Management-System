@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="459.0" fitWidth="943.0" layoutX="-266.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img4.jpg" />
+            <Image url="@images/img4.jpg" />
          </image>
          <effect>
             <ColorAdjust brightness="-0.54" />
@@ -35,7 +35,7 @@
             </Text>
             <ImageView fitHeight="106.0" fitWidth="81.0" layoutX="169.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons8-lock-64.png" />
+                  <Image url="@images/icons8-lock-64.png" />
                </image>
             </ImageView>
          </children></AnchorPane>
@@ -61,7 +61,7 @@
       </Text>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@cv.png" />
+            <Image url="@images/cv.png" />
          </image>
          <effect>
             <ColorAdjust brightness="1.0" hue="1.0" saturation="-1.0" />
