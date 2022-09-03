@@ -269,6 +269,10 @@ public class HelloController implements Initializable {
 
             } catch (SQLException e) {
                 e.printStackTrace();
+
+                loginTxtStatus.setText("UNABLE TO ACCESS DATABASE");
+                loginTxtStatus.setFill(Color.rgb(76, 225, 4));
+
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -299,7 +303,7 @@ public class HelloController implements Initializable {
 
 
 
-        if (event.getSource() == btnHome) {
+        if (event.getSource() == btnHome ) {
 
 
             txtWelcome.setText("Welcome Home");
@@ -553,7 +557,6 @@ public class HelloController implements Initializable {
 
 //--------------------------------------------------------------------------------------------------------
     // EMPLOYEE DETAILS----------------------------------------------------------------------------------
-
 
     //MY DB CONNECTOR ----------------------------------------------------------------------------------//
 

@@ -21,7 +21,24 @@
          </effect>
       </ImageView>
       <Pane layoutX="337.0" layoutY="177.0" opacity="0.22" prefHeight="4.0" prefWidth="249.0" style="-fx-background-color: GRAY;" />
-      <AnchorPane fx:id="LoginPane" layoutX="-76.0" minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="347.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-insets: 0;" styleClass="linear-grad" stylesheets="@css/HomeView.css" />
+      <AnchorPane fx:id="LoginPane" layoutX="-76.0" minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="347.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-insets: 0;" styleClass="linear-grad" stylesheets="@css/HomeView.css">
+         <children>
+            <Text fill="WHITE" layoutX="107.0" layoutY="409.0" strokeDashOffset="2.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeType="OUTSIDE" text="DEVELOPED BY" textAlignment="CENTER" wrappingWidth="205.0">
+               <font>
+                  <Font name="Gadugi" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="107.0" layoutY="431.0" strokeDashOffset="2.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeType="OUTSIDE" text="JAVA GROUP 18" textAlignment="CENTER" wrappingWidth="205.0">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="106.0" fitWidth="81.0" layoutX="169.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-lock-64.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
       <TextField fx:id="usertxtfield" layoutX="337.0" layoutY="251.0" prefHeight="33.0" prefWidth="236.0" promptText="Username" style="-fx-border-color: green; -fx-background-insets: 0; -fx-border-insets: 0; -fx-background-radius: 20; -fx-border-radius: 20;">
          <font>
             <Font size="15.0" />
@@ -37,7 +54,7 @@
             <Font name="Segoe UI Black" size="19.0" />
          </font>
       </Button>
-      <Text fx:id="loginTxtStatus" fill="WHITE" layoutX="295.0" layoutY="218.0" stroke="#0d0000" strokeDashOffset="2.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeType="OUTSIDE" text="ENTER LOGIN DETAILS" textAlignment="CENTER" wrappingWidth="319.0">
+      <Text fx:id="loginTxtStatus" fill="WHITE" layoutX="295.0" layoutY="218.0" strokeDashOffset="2.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeType="OUTSIDE" style="-fx-effect: SHADOW;" text="ENTER LOGIN DETAILS" textAlignment="CENTER" wrappingWidth="319.0">
          <font>
             <Font name="Gadugi Bold" size="19.0" />
          </font>
