@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.HelloController">
+    <children>
+        <Pane fx:id="pnStatus" layoutX="172.0" layoutY="43.0" prefHeight="104.0" prefWidth="516.0" style="-fx-background-color: #9f79ee;" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+            <children>
+                <Text fx:id="txtMgmtSystem" fill="WHITE" layoutX="152.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGEMENT SYSTEM" textAlignment="CENTER" wrappingWidth="291.88818359375">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="txtHotelName" fill="WHITE" layoutX="152.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPITAL VIEW HOTEL" textAlignment="CENTER" wrappingWidth="291.88818359375">
+                    <font>
+                        <Font name="Showcard Gothic" size="22.0" />
+                    </font>
+                </Text>
+                <Text fx:id="txtWelcome" fill="WHITE" layoutX="143.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" textAlignment="CENTER" wrappingWidth="291.88818359375">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="23.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <VBox alignment="TOP_CENTER" layoutX="-20.0" layoutY="6.0" prefHeight="476.0" prefWidth="172.0" style="-fx-background-color: #3e1b9b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="150.0" prefWidth="152.0">
+                    <children>
+                        <ImageView fitHeight="92.0" fitWidth="98.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@cv.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPITAL VIEW HOTEL">
+                            <font>
+                                <Font name="Showcard Gothic" size="13.0" />
+                            </font>
+                        </Text>
+                        <Pane layoutY="135.0" opacity="0.07" prefHeight="4.0" prefWidth="172.0" style="-fx-background-color: white;" />
+                    </children>
+                </Pane>
+                <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     HOME" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnEmployees" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     EMPLOYEES" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="20.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     CUSTOMERS" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnPayments" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="20.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     PAYMENTS" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnRooms" alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutX="20.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     ROOMS" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnBookings" alignment="BASELINE_LEFT" graphicTextGap="8.0" layoutX="20.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="37.0" prefWidth="132.0" stylesheets="@css/HomeView.css" text="     BOOKINGS" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <Button fx:id="btnClose" layoutX="736.0" layoutY="3.0" mnemonicParsing="false" onAction="#setBtnClose" prefHeight="22.0" prefWidth="30.0" style="-fx-background-color: #f5f5f5;" text="X">
+            <font>
+                <Font name="Corbel Bold" size="12.0" />
+            </font>
+        </Button>
+      <AnchorPane fx:id="paneView" layoutX="172.0" layoutY="147.0" minHeight="415.0" minWidth="608.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="270.0" fitWidth="563.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img2.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="57.0" layoutY="220.0" prefHeight="171.0" prefWidth="172.0">
+               <children>
+                  <Circle fill="#5f1fff" layoutX="86.0" layoutY="67.0" radius="62.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" />
+                  <Text fx:id="txt1" fill="#3e22da" layoutX="24.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FREE WIFI" textAlignment="CENTER" wrappingWidth="132.88818359375">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="102.0" fitWidth="102.0" layoutX="35.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wifiimg.png" />
+                     </image></ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="220.0" layoutY="220.0" prefHeight="171.0" prefWidth="172.0">
+               <children>
+                  <Circle fill="#5f1fff" layoutX="86.0" layoutY="67.0" radius="62.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" />
+                  <Text fx:id="txt11" fill="#3e22da" layoutX="24.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SWIMMING POOL" textAlignment="CENTER" wrappingWidth="132.88818359375">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img8.jpg" />
+                     </image></ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="380.0" layoutY="220.0" prefHeight="171.0" prefWidth="172.0">
+               <children>
+                  <Circle fill="#5f1fff" layoutX="86.0" layoutY="67.0" radius="62.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" />
+                  <Text fx:id="txt111" fill="#3e22da" layoutX="24.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS" textAlignment="CENTER" wrappingWidth="132.88818359375">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="18.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img9.png" />
+                     </image></ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Button fx:id="btnMin1" layoutX="706.0" layoutY="-2.0" mnemonicParsing="false" onAction="#setBtnMin1" prefHeight="22.0" prefWidth="30.0" style="-fx-background-color: #f5f5f5;" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="29.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cust.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="29.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@emp.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="30.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="29.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@room.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="29.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@payment.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+
+    </children>
+</AnchorPane>
