@@ -19,7 +19,7 @@
                         <Font name="Arial Black" size="57.0" />
                      </font>
                   </Text>
-                  <Text fx:id="payValue" fill="#4a0dd6" layoutX="62.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="304" wrappingWidth="180.0">
+                  <Text fx:id="payValue" fill="#4a0dd6" layoutX="62.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="180.0">
                      <font>
                         <Font name="Arial" size="57.0" />
                      </font>

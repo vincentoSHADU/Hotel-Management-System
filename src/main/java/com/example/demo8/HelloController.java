@@ -62,8 +62,6 @@ public class HelloController implements Initializable {
     @FXML
     private TableColumn<CustomerViewController, String> CusLnameCol;
 
-
-
     @FXML
     private TableColumn<EmployeeViewController, String> EmpContCol;
 
@@ -215,14 +213,22 @@ public class HelloController implements Initializable {
     @FXML
     private Text txtwifi;
 
+
     @FXML
     private Text loginTxtStatus;
+
+    @FXML
+    private Button logoutBtn;
+
 
     @FXML
     private Button login;
 
     @FXML
     private TextField pwdtxtfield;
+
+    @FXML
+    private PasswordField pwdtxtfield2;
 
     @FXML
     private TextField usertxtfield;
@@ -241,7 +247,7 @@ public class HelloController implements Initializable {
     void loginAction(ActionEvent event) {
 
          uname = usertxtfield.getText();
-         pwd = pwdtxtfield.getText();
+         pwd = pwdtxtfield2.getText();
 
 
         if (uname.equals("") && pwd.equals(""))
@@ -387,6 +393,22 @@ public class HelloController implements Initializable {
 
 
         }
+/*
+        else if (event.getSource() == logoutBtn) {
+
+
+            login.getScene().getWindow().hide();
+
+            Parent toot = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            Scene scene  = new Scene(toot);
+            Stage stage2 =  new Stage();
+            stage2.initStyle(StageStyle.UNDECORATED);
+            stage2.setScene(scene);
+            stage2.show();
+
+
+
+        }*/
     }
 
     @FXML
